@@ -188,7 +188,8 @@ fig1 = plt.figure(figsize=(8, 4))
 # Lignes de niveau
 ax1 = fig1.add_subplot(1, 2, 1)
 im = ax1.contourf(X, Y, Z, 30, cmap='RdBu_r', figsize=(10, 10))
-ax1.streamplot(X, Y, dX, dY, color='k', linewidth=5*speed/speed.max())
+ax1.streamplot(X, Y, dX, dY, ccolor='k', linewidth=5*speed/speed.max())
+
 # L'épaisseur des flèches nous indique que les pentes sont plus fortes
 # au centre de la surface
 
